@@ -1,12 +1,17 @@
 package be.heh.decorator2.kernels;
 
-public class NotificationBase {
-    private String subject;
+import be.heh.decorator2.models.Notification;
+
+public class NotificationBase implements Notification {
     private String content;
 
-    public NotificationBase(String subject, String content) {
-        this.subject = subject;
+    public NotificationBase(String content) {
         this.content = content;
     }
 
+    @Override
+    public String send() {
+        System.out.println(content);
+        return content;
+    }
 }

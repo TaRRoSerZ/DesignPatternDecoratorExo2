@@ -1,18 +1,18 @@
 package be.heh.decorator2.models;
 
 public abstract class NotificationType implements Notification {
-    private String content;
-    public String type;
-    public Notification notification;
+    private String type;
+    private Notification notification;
 
-    public NotificationType(String content, String type,  Notification notification) {
-        this.content = content;
-        this.type = type;
+    public NotificationType(String type, Notification notification) {
         this.notification = notification;
+        this.type = type;
     }
 
     @Override
-    public void send() {
-
+    public String send() {
+        String message = notification.send();
+        System.out.println(this.type + " sent " + message);
+        return message;
     }
 }
