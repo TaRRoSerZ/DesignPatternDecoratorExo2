@@ -6,6 +6,7 @@ Dans une application, les notifications peuvent être envoyées de différentes 
 Un utilisateur peut choisir une ou plusieurs méthodes de notification. Par exemple, une
 notification peut être envoyée par email et SMS en même temps.
 
-Réalisé par EVRARD Kyllian
+Réalisé par EVRARD Kyllian.
+
 
 <img src="assets/uml/DesignPatternDecoratorExo2.drawio.png">
